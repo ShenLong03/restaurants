@@ -1,11 +1,6 @@
-import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-
+import React from "react";
 import Restaurants from "../screens/Restaurants";
-import Favorites from "../screens/Favorites";
-import Search from "../screens/Search";
-import Account from "../screens/Account";
-import TopRestaurants from "../screens/TopRestaurants";
 
 const Stack = createStackNavigator();
 
