@@ -12,3 +12,7 @@ export const isUserLogged=()=>{
 
     return isLogged
 }
+
+export const getCurrentUser=()=>{
+    return firebase.auth().currentUser
+}
