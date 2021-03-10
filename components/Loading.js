@@ -11,21 +11,30 @@ export default function Loading({isVisible, text}) {
         overlayBackgroundColor="transparent"
         overlayStyle={styles.overlay}
       >
-        <View>
-          <ActivityIndicator />
-          {text && <Text>{text}</Text>}
+        <View style={styles.view}>
+          <ActivityIndicator size="large" color="#b50876" />
+          {text && <Text style={styles.text}>{text}</Text>}
         </View>
       </Overlay>
     );
 }
 
 const styles = StyleSheet.create({
-    overlay:{
-        height:100,
-        width:200,
-        backgroundColor:"#fff",
-        borderColor:"#b50876",
-        borderWidth:2,
-        borderRadius:10,
-    }
-})
+  overlay: {
+    height: 100,
+    width: 200,
+    backgroundColor: "#fff",
+    borderColor: "#b50876",
+    borderWidth: 2,
+    borderRadius: 10,
+  },
+  view: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text:{
+    color:"#b50876",
+    marginTop:10
+  }
+});
